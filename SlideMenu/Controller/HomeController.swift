@@ -26,13 +26,13 @@ class HomeController: UIViewController {
     
     @objc func handleMenuToggle() {
 
-        delegate?.handleMenuToggle()
+        delegate?.handleMenuToggle(forMenuOption: nil)
     }
     
     func configureNavigationBar() {
-        navigationController?.navigationBar.barTintColor = .darkGray
+        navigationController?.navigationBar.barTintColor = .brown
         navigationController?.navigationBar.barStyle = .black
-        navigationItem.title = "Side Menu"
+        navigationItem.title = "Home"
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "ic_menu_white_3x").withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(handleMenuToggle))
         
     }

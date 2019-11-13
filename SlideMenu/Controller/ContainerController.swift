@@ -27,6 +27,14 @@ class ContainerController: UIViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
+    
+    override var preferredStatusBarUpdateAnimation: UIStatusBarAnimation {
+        return .slide
+    }
+    
+    override var prefersStatusBarHidden: Bool {
+        return isExpanded
+    }
     // MARK: - Handlers
     
     func configureHomeController() {
@@ -63,15 +71,13 @@ class ContainerController: UIViewController {
             
         } else {
             UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: .curveEaseInOut, animations: {
-            }, completion: nil)
-            
-            UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: .curveEaseInOut, animations: {
                 self.centerController.view.frame.origin.x = 0
             }) { (_) in
                 guard let menuOption = menuOption else { return }
                 self.didSelectMenuOption(menuOption: menuOption)
             }
         }
+        animateStatusBar()
     }
     
     func didSelectMenuOption(menuOption: MenuOption) {
@@ -86,6 +92,13 @@ class ContainerController: UIViewController {
         case .Settings:
             print("show settings ")
         }
+    }
+    
+    func animateStatusBar() {
+        
+        UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: .curveEaseInOut, animations: {
+            self.setNeedsStatusBarAppearanceUpdate()
+        }, completion: nil)
     }
 }
 

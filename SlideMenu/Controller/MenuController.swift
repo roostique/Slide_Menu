@@ -26,6 +26,7 @@ class MenuController: UIViewController {
         
     }
     
+    
     // MARK: - Handlers
     func configureTableView() {
         tableView = UITableView()

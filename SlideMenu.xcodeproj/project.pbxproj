@@ -17,6 +17,9 @@
 		127EACE5237ADEFB00FB82F6 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127EACE4237ADEFB00FB82F6 /* HomeController.swift */; };
 		127EACE7237ADF0800FB82F6 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127EACE6237ADF0800FB82F6 /* MenuController.swift */; };
 		12873E15237C3D6900D4CA56 /* MenuOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12873E14237C3D6900D4CA56 /* MenuOption.swift */; };
+		128FBC33237C981D0071F620 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128FBC32237C981D0071F620 /* SettingsController.swift */; };
+		128FBC35237C99BA0071F620 /* NotificationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128FBC34237C99BA0071F620 /* NotificationsController.swift */; };
+		128FBC37237C99DC0071F620 /* MessagesConroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128FBC36237C99DC0071F620 /* MessagesConroller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		127EACE4237ADEFB00FB82F6 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		127EACE6237ADF0800FB82F6 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		12873E14237C3D6900D4CA56 /* MenuOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOption.swift; sourceTree = "<group>"; };
+		128FBC32237C981D0071F620 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		128FBC34237C99BA0071F620 /* NotificationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsController.swift; sourceTree = "<group>"; };
+		128FBC36237C99DC0071F620 /* MessagesConroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesConroller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,9 @@
 				127EACE2237ADEEE00FB82F6 /* ContainerController.swift */,
 				127EACE4237ADEFB00FB82F6 /* HomeController.swift */,
 				127EACE6237ADF0800FB82F6 /* MenuController.swift */,
+				128FBC32237C981D0071F620 /* SettingsController.swift */,
+				128FBC34237C99BA0071F620 /* NotificationsController.swift */,
+				128FBC36237C99DC0071F620 /* MessagesConroller.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -182,8 +191,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				128FBC33237C981D0071F620 /* SettingsController.swift in Sources */,
 				1219A2F4237B02F500F55D1C /* Protocols.swift in Sources */,
+				128FBC37237C99DC0071F620 /* MessagesConroller.swift in Sources */,
 				1219A2F6237B132D00F55D1C /* MenuOptionCell.swift in Sources */,
+				128FBC35237C99BA0071F620 /* NotificationsController.swift in Sources */,
 				12873E15237C3D6900D4CA56 /* MenuOption.swift in Sources */,
 				127EACE7237ADF0800FB82F6 /* MenuController.swift in Sources */,
 				127EACE5237ADEFB00FB82F6 /* HomeController.swift in Sources */,

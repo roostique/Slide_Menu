@@ -55,9 +55,7 @@ class ContainerController: UIViewController {
             menuController.delegate = self
             view.insertSubview(menuController.view, at: 0)
             addChild(menuController)
-            menuController.didMove(toParent: self)
-            print("added menu")
-            
+            menuController.didMove(toParent: self)            
             
         }
     }
@@ -90,7 +88,8 @@ class ContainerController: UIViewController {
         case .Notifications:
             print("show notif")
         case .Settings:
-            print("show settings ")
+            let controller = SettingsController()
+            present(UINavigationController(rootViewController: controller ), animated: true, completion: nil)
         }
     }
     

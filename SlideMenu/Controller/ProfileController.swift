@@ -1,14 +1,14 @@
 //
-//  MessagesConroller.swift
+//  ProfileController.swift
 //  SlideMenu
 //
-//  Created by Rustem Supayev on 14/11/2019.
+//  Created by Rustem Supayev on 17/11/2019.
 //  Copyright © 2019 Rustem Supayev. All rights reserved.
 //
 
 import UIKit
 
-class MessagesController: UIViewController {
+class ProfileController: UIViewController {
     
     // MARK: - Properties
     
@@ -34,21 +34,23 @@ class MessagesController: UIViewController {
         view.backgroundColor = .white
         navigationController?.navigationBar.barTintColor =  .brown
         navigationController?.navigationBar.prefersLargeTitles = true
-        navigationItem.title = "Messages"
+        navigationItem.title = "Profile"
         navigationController?.navigationBar.barStyle = .black
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "baseline_clear_white_36pt_3x").withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(handleDismiss))
         
+        
         let label = UILabel()
+        
         view.addSubview(label)
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Messages not available..."
+        label.text = "Profile information not available..."
         label.textColor = .gray
         
         NSLayoutConstraint.activate([
-        label.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-        label.centerYAnchor.constraint(equalTo: view.centerYAnchor)
-        ])
+            label.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            label.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+            ])
+        
     }
-    
 }

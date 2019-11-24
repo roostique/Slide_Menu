@@ -82,11 +82,14 @@ class ContainerController: UIViewController {
         switch menuOption {
             
         case .Profile:
-            print("show profile")
+            let controller = ProfileController()
+            present(UINavigationController(rootViewController: controller ), animated: true, completion: nil)
         case .Messages:
-            print("show message")
+            let controller = MessagesController()
+            present(UINavigationController(rootViewController: controller ), animated: true, completion: nil)
         case .Notifications:
-            print("show notif")
+            let controller = NotificationsController()
+            present(UINavigationController(rootViewController: controller ), animated: true, completion: nil)
         case .Settings:
             let controller = SettingsController()
             present(UINavigationController(rootViewController: controller ), animated: true, completion: nil)

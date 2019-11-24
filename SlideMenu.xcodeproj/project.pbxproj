@@ -20,6 +20,7 @@
 		128FBC33237C981D0071F620 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128FBC32237C981D0071F620 /* SettingsController.swift */; };
 		128FBC35237C99BA0071F620 /* NotificationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128FBC34237C99BA0071F620 /* NotificationsController.swift */; };
 		128FBC37237C99DC0071F620 /* MessagesConroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128FBC36237C99DC0071F620 /* MessagesConroller.swift */; };
+		12A354C023813BD600765C3D /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A354BF23813BD600765C3D /* ProfileController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		128FBC32237C981D0071F620 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		128FBC34237C99BA0071F620 /* NotificationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsController.swift; sourceTree = "<group>"; };
 		128FBC36237C99DC0071F620 /* MessagesConroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesConroller.swift; sourceTree = "<group>"; };
+		12A354BF23813BD600765C3D /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,9 +91,10 @@
 				127EACE2237ADEEE00FB82F6 /* ContainerController.swift */,
 				127EACE4237ADEFB00FB82F6 /* HomeController.swift */,
 				127EACE6237ADF0800FB82F6 /* MenuController.swift */,
-				128FBC32237C981D0071F620 /* SettingsController.swift */,
-				128FBC34237C99BA0071F620 /* NotificationsController.swift */,
+				12A354BF23813BD600765C3D /* ProfileController.swift */,
 				128FBC36237C99DC0071F620 /* MessagesConroller.swift */,
+				128FBC34237C99BA0071F620 /* NotificationsController.swift */,
+				128FBC32237C981D0071F620 /* SettingsController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				128FBC35237C99BA0071F620 /* NotificationsController.swift in Sources */,
 				12873E15237C3D6900D4CA56 /* MenuOption.swift in Sources */,
 				127EACE7237ADF0800FB82F6 /* MenuController.swift in Sources */,
+				12A354C023813BD600765C3D /* ProfileController.swift in Sources */,
 				127EACE5237ADEFB00FB82F6 /* HomeController.swift in Sources */,
 				127EACCD237ADE5300FB82F6 /* AppDelegate.swift in Sources */,
 				127EACE3237ADEEE00FB82F6 /* ContainerController.swift in Sources */,
